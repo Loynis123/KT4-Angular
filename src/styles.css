@@ -1,0 +1,22 @@
+@import '@fontsource/dm-sans/400.css';
+@import '@fontsource/dm-sans/500.css';
+@import '@fontsource/dm-sans/700.css';
+
+:root {
+  --unit: min(1px, calc(100vw / 1440));
+  --ink: #170f49;
+  --muted: #6f6b90;
+  font-family: 'DM Sans', sans-serif;
+  color: var(--ink);
+  background: #ffffff;
+}
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; }
+button, input { font: inherit; }
+button, input { -webkit-tap-highlight-color: transparent; }
+app-root { display: block; max-width: 1440px; min-height: 100vh; margin: 0 auto; }
+button:focus-visible, input:focus-visible { outline: 2px solid #9e76ed; outline-offset: 3px; }
+@media (max-width: 599px) {
+  :root { --unit: .8px; }
+  app-root { min-height: 100vh; }
+}
